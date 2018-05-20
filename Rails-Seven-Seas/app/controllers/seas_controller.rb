@@ -32,7 +32,7 @@ class SeasController < ApplicationController
     redirect_to action: "show", id: @sea.id
   end
 
-  def delete
+  def destroy 
     @sea = Sea.find(params[:id])
     @sea.destroy
 

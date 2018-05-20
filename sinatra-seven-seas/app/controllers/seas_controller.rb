@@ -1,10 +1,5 @@
 class SeasController < ApplicationController
 
-  get "/" do
-
-    erb :welcome
-  end
-
   get "/seas" do
     @seas = Sea.all
     erb :'index.html'
